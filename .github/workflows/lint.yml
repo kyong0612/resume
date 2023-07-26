@@ -1,0 +1,25 @@
+name: Lints
+on:
+  pull_request:
+    branches: [main, master]
+
+jobs:
+  test:
+    timeout-minutes: 15
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: volta-cli/action@v4
+
+      - name: Install node
+        run: volta install node
+
+      - name: Install pnpm
+        run: volta install pnpm
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Lint
+        run: pnpm lint
