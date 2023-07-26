@@ -1,0 +1,22 @@
+{
+  "name": "resume",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "lint": "textlint ./*.md",
+    "lint:fix": "textlint --fix ./*.md"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "textlint": "^13.3.3"
+  },
+  "volta": {
+    "node": "18.16.1",
+    "pnpm": "8.6.6"
+  },
+  "dependencies": {
+    "textlint-rule-preset-japanese": "^8.0.0"
+  }
+}
