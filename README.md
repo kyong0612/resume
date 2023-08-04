@@ -45,12 +45,13 @@ SaaS脆弱性診断ツールの自社開発・保守運用
 #### 業務内容
 
 - APIやバッチ処理の仕様調整や提案・設計・実装
-  - Design Docの作成・チームでの合意形成
+  - Design DocやADRの作成・チームでの合意形成
+  - Document文化の推進
   - QA
 - 開発者体験向上
   - CICDの整備
   - ローカル開発環境の整備
-- terraformでのインフラ改修
+- Terraformでのインフラ改修
 - リファクタリング
 
 ### 2022.02 - 2023.06 / 株式会社BuySell Technologies(正社員)
@@ -80,6 +81,9 @@ SaaS脆弱性診断ツールの自社開発・保守運用
   - パフォーマンス改善
   - 監視・アラート整備
   - SLI/SLO/SLAの設計・改善
+
+- 生産性向上によりFindy Teams +award受賞
+  - <https://findy-code.io/pick-up/articles/findy-team-plus-award-medium-div>
 
 - チーム横断的な取り組み
   - 技術選定の相談対応
