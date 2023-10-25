@@ -129,13 +129,14 @@ Securify SaaS診断の開発・保守運用
 |--------|----------------------------------------|
 | 担当役割   | バックエンドエンジニア                            |
 | チーム規模  | 約 5名                                   |
-| 技術スタック | Go、Restful API、AWS、MySQL、Redis、Firebase など |
+| 技術スタック | Go、Restful API、AWS、MySQL、Redis、Firebase、Redash など |
 
 ##### 業務内容
 
 - DB・API・バッチの仕様整理・設計・実装
 - Goでの用いた管理画面実装
 - 非同期化によるパフォーマンス改善
+- Redash上での分析クエリ作成
 
 #### Go Boilerplateメンテナンス(2021.07 ~ 現在)
 
