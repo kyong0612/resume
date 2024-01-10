@@ -255,7 +255,7 @@ SIerへ派遣され、医療機関の検査システムの保守運用を行う
 
 ## スキル
 
-※ *2023年07月基準*
+※ *2024年01月基準*
 
 ### プログラミング言語
 
@@ -264,8 +264,8 @@ SIerへ派遣され、医療機関の検査システムの保守運用を行う
 | 経験年数 | スキル                          |
 |------|------------------------------|
 | 0-1年 | Java、PHP、Python              |
-| 1-2年 | Terraform、GraphQL、PostgreSQL |
-| 2-3年 | GCP、Next.js、React、MySQL      |
+| 1-2年 |  |
+| 2-3年 | GCP、Terraform、GraphQL、Next.js、React、MySQL、PostgreSQL |
 | 3-4年 | Go、AWS                       |
 
 ### 自然言語
