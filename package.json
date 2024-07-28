@@ -13,7 +13,7 @@
     "textlint": "^13.3.3"
   },
   "volta": {
-    "node": "18.16.1",
+    "node": "18.20.4",
     "pnpm": "8.6.6"
   },
   "dependencies": {
