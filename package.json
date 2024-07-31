@@ -17,6 +17,6 @@
     "pnpm": "8.6.6"
   },
   "dependencies": {
-    "textlint-rule-preset-japanese": "^8.0.0"
+    "textlint-rule-preset-japanese": "^10.0.0"
   }
 }
