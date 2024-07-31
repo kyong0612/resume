@@ -14,7 +14,7 @@
   },
   "volta": {
     "node": "18.16.1",
-    "pnpm": "8.6.6"
+    "pnpm": "9.6.0"
   },
   "dependencies": {
     "textlint-rule-preset-japanese": "^8.0.0"
