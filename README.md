@@ -31,20 +31,24 @@
 
 #### 概要
 
-Securify SaaS診断(SSPM)の開発保守運用
+- Securify SaaS診断(SSPM)のフルサイクルエンジニアリング
+- Securifyの新規プロダクト・共通基盤の初期設計・開発
 
 | 項目     | 詳細                |
 |--------|-------------------|
 | 担当役割   | フルスタックエンジニア |
-| チーム規模  | 約 5名              |
-| 技術スタック | Go、GCP、GraphQL、Terraform、PostgreSQL、Next.js など |
+| チーム規模  | 約 10名              |
+| 技術スタック | Go、Typescript、GoogleCloud、GraphQL、Terraform、PostgreSQL、React(Next.js、Remix) など |
 
 #### 業務内容
 
+- コンパウンド戦略を支える共通DBの段階に応じた設計・実装
+- 新規プロダクトの設計・技術選定
+  - チーム内外のステークホルダーに対してのDesign Doc・ADRの作成・レビューを通じた合意形成
 - 機能開発の設計・実装・QA
 - 難易度の高い実装のリード(計画・調整・実行)
   - 後天的なマクロサービス化による他サービスとのID統合
-- スケーラビリティ向上のための設計改善(リアーキテクチャ)
+- スケーラビリティ向上のための設計・改善(リアーキテクチャ)
 - 非同期開発を加速させるためのドキュメント文化の推進
   - Design DocやADRの作成による合意形成を推進
 - CICDおよびローカル開発環境の整備によるDX向上
@@ -94,7 +98,7 @@ Securify SaaS診断(SSPM)の開発保守運用
   - 車内でのコードリーディング会の企画・運営
   - 社内外の勉強会登壇([イベントレポートの一部](https://note.com/midastechreview/n/n4ab218558770))
 
-### 2020.05 - 現在 / K.S.ロジャース株式会社(副業)
+### 2020.05 - 2024.5 / K.S.ロジャース株式会社(副業)
 
 #### 行政システムSaaS開発(2023.12 ~ 2024.4)
 
@@ -276,8 +280,8 @@ SIerへ派遣され、医療機関の検査システムの保守運用を行う
 | 経験年数 | スキル                          |
 |------|------------------------------|
 | 0-1年 | Java、PHP、Python              |
-| 2-3年 | MySQL |
-| 3-4年 | Go、AWS、GCP、Terraform、GraphQL、Next.js、React、PostgreSQL |
+| 2-3年 | MySQL、AWS |
+| 3-4年 | Go、Typescript、GoogleCloud、Terraform、GraphQL、React、PostgreSQL |
 
 ### 自然言語
 
