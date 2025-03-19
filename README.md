@@ -8,6 +8,7 @@
 - [スキル](#スキル)
 - [‍性格](#性格)
 - [趣味](#趣味)
+- [オープンソース活動](#オープンソース活動)
 
 ## 基本情報
 
@@ -17,6 +18,7 @@
 バックエンドおよびSRE領域を中心に、フロントエンドやデータ分析など幅広く対応可能。チーム全体の生産性向上や持続的な開発によるプロダクト価値の継続的向上を重視しています。
 
 [Twitter](https://twitter.com/kyongshiii06)
+[GitHub](https://github.com/kyong0612)
 
 ## 学歴
 
@@ -37,7 +39,7 @@
 |--------|-------------------|
 | 担当役割   | フルスタックエンジニア |
 | チーム規模  | 約 10名              |
-| 技術スタック | Go、Typescript、GoogleCloud、GraphQL、Terraform、PostgreSQL、React(Next.js、Remix) など |
+| 技術スタック | Go、Typescript、GoogleCloud、GraphQL、Terraform、PostgreSQL、React(Next.js、Remix)、Gemini API、Connect-go など |
 
 #### 業務内容
 
@@ -46,6 +48,8 @@
   - チーム内外のステークホルダーに対してのDesign Doc・ADRの作成・レビューを通じた合意形成
 - 難易度の高い実装のリード
   - 後天的なマクロサービス化による他サービスとのID統合などを実現
+  - Gemini Pro Vision APIを活用したAI機能の実装
+  - Connect-goを用いた高パフォーマンスAPIの設計と実装
 - スケーラビリティ向上のための設計・改善(リアーキテクチャ)
 - 非同期開発を加速させるためのドキュメント文化の推進
   - Design DocやADRの作成による合意形成を推進
@@ -56,6 +60,7 @@
   - DBパフォーマンスの大幅改善（SQL実行時間を240000倍(約4min -> 約0.5ms)短縮等）
   - 外部API実行の非同期化によるAPIレスポンスタイムの1/3改善
 - 採用候補者の紹介
+- クリーンアーキテクチャを採用したプロジェクト設計の推進
 
 ### 2022.02 - 2023.06 / 株式会社BuySell Technologies(正社員)
 
@@ -93,10 +98,30 @@
   - マイクロサービス全体での課題の特定・改善に向けた取り組み
 
 - Golang関連
-  - 車内でのコードリーディング会の企画・運営
+  - 社内でのコードリーディング会の企画・運営
   - 社内外の勉強会登壇([イベントレポートの一部](https://note.com/midastechreview/n/n4ab218558770))
 
 ### 2020.05 - 2024.5 / K.S.ロジャース株式会社(副業)
+
+#### フィットネスサポートアプリ開発(2024.01 ~ 現在)
+
+##### 概要
+
+ワークアウト結果の写真を送信することで自動的に集計するLINEボットアプリケーションの開発
+
+| 項目     | 詳細                                     |
+|--------|----------------------------------------|
+| 担当役割   | バックエンドエンジニア・テックリード               |
+| チーム規模  | 約 3名                                   |
+| 技術スタック | Go、Gemini Pro Vision API、Google Cloud (Cloud Run, Cloud Deploy, GCS, BigQuery, PubSub)、Connect-go など |
+
+##### 業務内容
+
+- Gemini Pro Vision APIを活用したAI画像認識機能の設計・実装
+- Connect-goを用いたType-safe APIの実装
+- クラウドネイティブな設計・実装（Cloud Run、PubSub等の活用）
+- CI/CDパイプラインの構築
+- コードレビューとメンバーへの技術指導
 
 #### 行政システムSaaS開発(2023.12 ~ 2024.4)
 
@@ -174,6 +199,7 @@
 
 - リファクタリングや見本となるサンプルコードの実装
 - Libraryやアーキテクチャ改善の提案
+- クリーンアーキテクチャのボイラープレート整備
 
 #### 自社SaaS開発(2020.06 ~ 2021.06)
 
@@ -269,7 +295,7 @@ SIerへ派遣され、医療機関の検査システムの保守運用を行う
 
 ## スキル
 
-※ *2024年07月基準*
+※ *2025年03月基準*
 
 ### プログラミング言語
 
@@ -279,7 +305,37 @@ SIerへ派遣され、医療機関の検査システムの保守運用を行う
 |------|------------------------------|
 | 0-1年 | Java、PHP、Python              |
 | 2-3年 | MySQL、AWS |
-| 3-4年 | Go、Typescript、GoogleCloud、Terraform、GraphQL、React、PostgreSQL |
+| 3-5年 | Go、Typescript、GoogleCloud、Terraform、GraphQL、React、PostgreSQL、Connect-go |
+
+### AI・ML技術
+
+| 技術                     | 経験・知識レベル             |
+|------------------------|----------------------|
+| Gemini Pro Vision API  | 実務経験あり（画像認識、テキスト分析） |
+| Claude API             | 個人開発・学習での使用経験       |
+| プロンプトエンジニアリング        | 実践的な知識と経験あり         |
+
+### クラウド・インフラ
+
+| 技術                  | 経験・知識レベル                 |
+|---------------------|--------------------------|
+| Google Cloud Platform | 設計・実装・運用経験あり（多数のサービス） |
+| AWS                 | 設計・実装・運用経験あり            |
+| Terraform           | 実践的な経験あり（中〜大規模環境）      |
+| Docker/Kubernetes   | 設計・実装・運用経験あり            |
+| CI/CD               | GitHub Actions、Cloud Build等での経験あり |
+
+### アーキテクチャ・設計
+
+| 技術・概念                | 経験・知識レベル          |
+|-----------------------|-------------------|
+| クリーンアーキテクチャ          | 実践的な経験・知識あり      |
+| マイクロサービスアーキテクチャ      | 設計・実装経験あり        |
+| ドメイン駆動設計（DDD）        | 実践的な知識あり         |
+| イベント駆動型アーキテクチャ       | 設計・実装経験あり        |
+| RESTful API設計        | 実践的な経験あり         |
+| GraphQL API設計        | 実践的な経験あり         |
+| gRPC/Connect-go設計・実装 | 実践的な経験あり         |
 
 ### 自然言語
 
@@ -302,3 +358,28 @@ SIerへ派遣され、医療機関の検査システムの保守運用を行う
 - 勉強
   - 新しい知識に触れることが快感です
   - 本や動画や音声とあらゆる媒体でIT限らず心理学・脳科学・医療・経済・哲学など幅広く学んでいます
+  - 最近はAI関連技術（特に大規模言語モデル）の探求に注力しています
+
+## オープンソース活動
+
+### 主要プロジェクト
+
+#### my-go-clean-architecture
+Uncle Bobのクリーンアーキテクチャの原則に基づいたGoの実装例。Models層、Repository層、Infrastructure層、Usecase層、Delivery層の責務分離を明確にし、テスト容易性と拡張性を重視した設計。自身のプロジェクトや他のエンジニアの参考となるよう設計・実装。
+
+**GitHub:** [kyong0612/my-go-clean-architecture](https://github.com/kyong0612/my-go-clean-architecture)
+
+#### fitness-supporter
+Gemini Pro Vision APIを活用したフィットネス記録自動化アプリケーション。ワークアウト結果の写真からデータを抽出し、BigQueryに蓄積・分析するシステム。Connect-go、Cloud Run、Cloud Deployを組み合わせたクラウドネイティブアーキテクチャを採用。
+
+**GitHub:** [kyong0612/fitness-supporter](https://github.com/kyong0612/fitness-supporter)
+
+#### go-prj-starter
+Goプロジェクトの迅速な立ち上げを可能にするテンプレート。コーディング規約、ディレクトリ構造、CI/CD設定、依存関係管理などのベストプラクティスを組み込み。他のエンジニアの開発効率向上にも貢献。
+
+**GitHub:** [kyong0612/go-prj-starter](https://github.com/kyong0612/go-prj-starter)
+
+#### learning-notes
+技術書、講演、記事、論文から得た知見をまとめた学習ノート。AI、システム設計、プロンプトエンジニアリングなど幅広いトピックをカバー。
+
+**GitHub:** [kyong0612/learning-notes](https://github.com/kyong0612/learning-notes)
