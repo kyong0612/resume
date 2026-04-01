@@ -37,14 +37,19 @@
 | ------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 担当役割     | ソフトウェアエンジニア                                                                                                                                     |
 | チーム規模   | 約 10 名                                                                                                                                                   |
-| 技術スタック | TypeScript、React、tRPC、Connect RPC、Protocol Buffers、Google Cloud（GKE、Cloud Run、Firestore、BigQuery）、Terraform、Terragrunt、Kubernetes、ArgoCD、Datadog、Sentry、Docker など |
+| 技術スタック | TypeScript、React、tRPC、Connect RPC、Protocol Buffers、Google Cloud（GKE、Cloud Run、Cloud Tasks、Cloud Workflows、Firestore、BigQuery、Data Catalog、Artifact Registry）、Terraform、Terragrunt、Kubernetes、ArgoCD、GitHub Actions、Datadog、Sentry、Docker など |
 
 #### 業務内容
 
-- KARTE Datahub リアーキテクチャの設計・開発
-  - 権限管理の強化
-  - GUI 改善によるユーザビリティ向上
-  - API ファースト化による外部ツール連携の容易性向上
+- BigQuery データセキュリティ基盤の設計・実装
+  - エンタープライズ顧客が求めるカラム単位・行単位のアクセス制御（CLS / RLS）を、バックエンドから管理画面 UI まで End-to-End で構築。複数データストア間の整合性を保つロールバック機構を設計し、マルチテナント環境での安全なデータ公開を実現
+- SQL クエリプラットフォームの新規構築
+  - 非エンジニアが安全に BigQuery を操作できるクエリ実行基盤を、SQL エディタ・コスト見積もり・パラメタライズドクエリ・実行履歴・バージョン管理を含めスクラッチで開発
+  - バージョン管理は Git の内部データ構造を活用した独自設計。クエリ単位でリポジトリを分離し同時編集時の競合を構造的に排除、Git refs を持たず DB 側の commit hash を正とする Hybrid 構成により分散システム間の整合性問題を回避。障害時もアプリケーション本体に影響しない耐障害性を確保
+- マルチテナント自動デプロイパイプラインの設計・構築
+  - テナントごとに独立した GCP プロジェクトをプロビジョニングする構成で、プロジェクト境界を越えた自動デプロイを実現。キュー直列化による競合防止・リスクレベル別の段階的ロールアウト・リソース依存関係を考慮した並列更新により、安全性と速度を両立。Terraform / Terragrunt によるインフラ管理、クレデンシャルレスな CI/CD 連携、リソース単位の最小権限 IAM 設計まで一貫して担当
+- アプリケーションアーキテクチャの改善
+  - Clean Architecture への移行を主導し、ドメイン境界の分離・依存性逆転・Protocol Buffer ベースの End-to-End 型安全性を実現。開発速度と品質の両立に寄与
 
 ### 2023.06 - 2025.12 / 株式会社スリーシェイク(業務委託)
 
@@ -343,7 +348,7 @@ SIer へ派遣され、医療機関の検査システムの保守運用を行う
 
 ## スキル
 
-※ _2026 年 2 月基準_
+※ _2026 年 4 月基準_
 
 ### プログラミング言語
 
@@ -352,7 +357,7 @@ SIer へ派遣され、医療機関の検査システムの保守運用を行う
 | 経験年数 | スキル                                                             |
 | -------- | ------------------------------------------------------------------ |
 | 0-1 年   | Java、PHP、Python、Kubernetes                                      |
-| 2-3 年   | MySQL、AWS                                                         |
+| 2-3 年   | MySQL、AWS、Protocol Buffers                                       |
 | 5 ~ 年   | Go、Typescript、GoogleCloud、Terraform、GraphQL、React、PostgreSQL |
 
 ### 自然言語
