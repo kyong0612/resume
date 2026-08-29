@@ -37,7 +37,7 @@
 | ------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 担当役割     | ソフトウェアエンジニア                                                                                                                                     |
 | チーム規模   | 約 10 名                                                                                                                                                   |
-| 技術スタック | TypeScript、React、tRPC、Connect RPC、Protocol Buffers、OpenAPI、MCP（Model Context Protocol）、Google Cloud（GKE、Cloud Run、Cloud Tasks、Cloud Workflows、Firestore、BigQuery、Analytics Hub、Data Catalog、Secret Manager、Artifact Registry）、Terraform、Terragrunt、Kubernetes、ArgoCD、GitHub Actions、Docker Compose、Datadog、Sentry など |
+| 技術スタック | TypeScript、React、tRPC、Connect RPC、Protocol Buffers、OpenAPI、MCP（Model Context Protocol）、Google Cloud（GKE、Cloud Run、Cloud Tasks、Cloud Workflows、Firestore、BigQuery、BigQuery sharing、Data Catalog、Secret Manager、Artifact Registry）、Terraform、Terragrunt、Kubernetes、ArgoCD、GitHub Actions、Docker Compose、Datadog、Sentry など |
 
 #### 業務内容
 
@@ -61,7 +61,7 @@
   - CLS・RLS・クエリ・データ共有の 55 エンドポイントを MCP（Model Context Protocol）ツールとして公開し、AI エージェントから直接呼び出し可能に。OpenAPI 仕様への拡張属性付与だけでツールが生成される運用に整備
   - 同一機能を管理画面・社内 API・公開 API・CLI・MCP の 5 面で揃えて提供する開発様式を確立し、開発者向け CLI にもコマンド群を実装
 - テナント間データ共有・外部連携機能の新規開発
-  - BigQuery Analytics Hub を用いたテナント間データ共有、外部ソースのフェデレーションテーブル作成、外部システム向けサービスアカウント払い出しを、管理画面・API の両面で新規構築
+  - BigQuery sharing（旧 Analytics Hub）によるテナント間データ共有・フェデレーションテーブル作成・外部向けサービスアカウント払い出しを、管理画面と API の両面で新規構築
   - 共有されたデータセットの中身（テーブル一覧・スキーマ・行プレビュー）を、共有元の行・列アクセス制御を適用した状態で確認できる閲覧機能を追加し、外部共有データの透明性を確保
   - 公開に先立ち、鍵なし認証連携経路だけ制限を迂回できる認可バイパスや部分失敗で孤児化した GCP リソースがリトライを塞ぐ問題などを事前に修正し、公開範囲の拡大と安全性を両立
 - 認可の網羅的テストによる脆弱性の発見・修正とエラーハンドリングの体系化
